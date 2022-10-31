@@ -12,7 +12,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: 'EX-WebThrottle2',
+  base: '/EX-WebThrottle2/',
   test: {
     coverage: {
       reporter: ['text', 'json', 'json-summary', 'html']
