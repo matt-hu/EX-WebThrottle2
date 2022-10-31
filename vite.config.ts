@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite'
+// import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
@@ -11,5 +12,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: 'EX-WebThrottle2'
+  base: 'EX-WebThrottle2',
+  test: {
+    coverage: {
+      reporter: ['text', 'json', 'json-summary', 'html']
+    }
+  }
 })
