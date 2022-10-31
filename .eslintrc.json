@@ -1,0 +1,26 @@
+{
+    "root": true,
+	"extends": [
+        "plugin:vue/vue3-recommended",
+		"eslint:recommended",
+        "@vue/eslint-config-typescript/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+	"parser": "vue-eslint-parser",
+    "plugins": [
+		"vue",
+        "@typescript-eslint"
+    ],
+    "ignorePatterns": ["*.js", "*.config.ts"],
+    "rules": {
+		"semi": ["warn", "always"],
+        "vue/html-indent": ["warn", 4],
+        "vue/html-closing-bracket-spacing": "off",
+        "no-trailing-spaces": ["warn", {"skipBlankLines": true}],
+        "indent": "warn",
+        "quotes": ["warn", "single"]
+    }
+}
