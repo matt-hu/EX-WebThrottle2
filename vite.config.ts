@@ -13,7 +13,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/EX-WebThrottle2/',
+  base: process.env.GH_BUILD ? '/EX-WebThrottle2/' : '/',
   test: {
     reporters: 
               process.env.GITHUB_ACTIONS
