@@ -8,7 +8,6 @@ function someFunction(test: string) {
   console.log(test);
 }
 
-someFunction(props.msg2);
 </script>
 
 <template>
