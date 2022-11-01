@@ -21,8 +21,8 @@ jobs:
       - name: 'Report Coverage'
         if: always() # Also generate the report if tests are failing
         uses:  davelosert/vitest-coverage-report-action@v1
-        # with:
-          # json-summary-path: './src/coverage/coverage-summary.json'
-          # json-final-path: './src/coverage/coverage-final.json'
+        with:
+          json-summary-path: './coverage/coverage-summary.json'
+          json-final-path: './coverage/coverage-final.json'
 
 
