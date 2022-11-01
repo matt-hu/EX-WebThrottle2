@@ -38,7 +38,10 @@ export default defineConfig({
               process.env.GITHUB_ACTIONS
               ? ['default', new GithubActionsReporter()]
               // ? ['html']
-              : ['default']
+              : ['default'],
+    coverage: {
+      reporter: ['text', 'json-summary', 'json']
+    }
 
   }
 })

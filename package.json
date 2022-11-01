@@ -6,7 +6,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "old-build": "run-p type-check build-only",
     "preview": "vite preview",
-    "test:unit": "vitest --environment jsdom --root src/",
+    "test:unit": "vitest --environment jsdom --root src/ --coverage",
     "test:e2e": "playwright test",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
