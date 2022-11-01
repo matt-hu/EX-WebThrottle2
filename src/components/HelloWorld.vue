@@ -3,6 +3,12 @@ const props = defineProps<{
   msg: string,
   msg2: string,
 }>();
+
+function someFunction(test: string) {
+  console.log(test);
+}
+
+someFunction(props.msg2);
 </script>
 
 <template>
