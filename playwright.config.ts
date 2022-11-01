@@ -1,5 +1,5 @@
-import type { PlaywrightTestConfig } from '@playwright/test'
-import { devices } from '@playwright/test'
+import type { PlaywrightTestConfig } from '@playwright/test';
+import { devices } from '@playwright/test';
 
 /**
  * Read environment variables from file.
@@ -21,6 +21,8 @@ const config: PlaywrightTestConfig = {
      */
     timeout: 5000
   },
+  /* Run tests in files in parallel */
+  fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -48,21 +50,23 @@ const config: PlaywrightTestConfig = {
     {
       name: 'chromium',
       use: {
-        ...devices['Desktop Chrome']
-      }
+        ...devices['Desktop Chrome'],
+      },
     },
+
     {
       name: 'firefox',
       use: {
-        ...devices['Desktop Firefox']
-      }
+        ...devices['Desktop Firefox'],
+      },
     },
+
     {
       name: 'webkit',
       use: {
-        ...devices['Desktop Safari']
-      }
-    }
+        ...devices['Desktop Safari'],
+      },
+    },
 
     /* Test against mobile viewports. */
     // {
@@ -94,19 +98,14 @@ const config: PlaywrightTestConfig = {
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
-  // outputDir: 'test-results/',
+  outputDir: 'test-results/',
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    /**
-     * Use the dev server by default for faster feedback loop.
-     * Use the preview server on CI for more realistic testing.
-    Playwright will re-use the local server if there is already a dev-server running.
-     */
     command: process.env.CI ? 'vite preview --port 5173' : 'vite dev',
     port: 5173,
     reuseExistingServer: !process.env.CI
-  }
-}
+  },
+};
 
-export default config
+export default config;
