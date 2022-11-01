@@ -42,7 +42,9 @@ export default defineConfig({
     coverage: {
       provider: 'istanbul',
       reporter: ['text', 'json-summary', 'json']
+    },
+    deps: {
+      inline: ["vuetify"]
     }
-
   }
 })
