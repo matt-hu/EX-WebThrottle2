@@ -1,12 +1,12 @@
 {
-  "name": "EX-WebThrottle2",
+  "name": "ex-webthrottle2",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "old-build": "run-p type-check build-only",
     "preview": "vite preview",
-    "test:unit": "vitest --environment jsdom --root src/",
+    "test:unit": "vitest --environment jsdom --root src/ --coverage",
     "test:e2e": "playwright test",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
@@ -28,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
     "@vitejs/plugin-vue": "^3.2.0",
+    "@vitest/coverage-c8": "^0.24.5",
     "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/test-utils": "^2.2.1",
     "@vue/tsconfig": "^0.1.3",
