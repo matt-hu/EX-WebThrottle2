@@ -1,5 +1,5 @@
 {
-  "name": "EX-WebThrottle2",
+  "name": "ex-webthrottle2",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
