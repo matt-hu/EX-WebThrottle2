@@ -44,6 +44,7 @@ export default defineConfig({
       reporter: ['text', 'json-summary', 'json']
     },
     deps: {
+      external: ["vuetify"],
       inline: ["vuetify"]
     }
   }
