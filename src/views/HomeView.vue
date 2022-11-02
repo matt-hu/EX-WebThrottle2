@@ -18,7 +18,7 @@ const counter = ref(0);
             <v-btn @click="counter++">
                 Click me!
             </v-btn>
-            <v-btn @click="counter = 0">
+            <v-btn @click="counter = 0" id="reset">
                 Reset
             </v-btn>
         </v-responsive>
