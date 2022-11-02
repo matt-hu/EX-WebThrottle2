@@ -13,6 +13,7 @@ const router = useRouter();
         <v-app-bar :elevation="0">
             <template #prepend>
                 <v-app-bar-nav-icon
+                    id="drawer-icon"
                     @click="drawer = !drawer"
                 />
             </template>

@@ -12,13 +12,19 @@ const counter = ref(0);
                 Home
             </h1>
 
-            <p class="text-h2">
+            <p
+                id="counter"
+                class="text-h2"
+            >
                 {{ counter }}
             </p>
             <v-btn @click="counter++">
                 Click me!
             </v-btn>
-            <v-btn @click="counter = 0" id="reset">
+            <v-btn
+                id="reset"
+                @click="counter = 0"
+            >
                 Reset
             </v-btn>
         </v-responsive>

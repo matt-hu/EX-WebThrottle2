@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('homepage has Playwright in title and get started link linking to the intro page', async ({ page }) => {
+test('Homepage has correct title', async ({ page }) => {
     // await page.goto('https://playwright.dev/');
     await page.goto('/');
 
@@ -8,14 +8,26 @@ test('homepage has Playwright in title and get started link linking to the intro
     await expect(page).toHaveTitle(/Vuetify/);
 
     // create a locator
-    // const getStarted = page.getByText('Get Started');
+});
 
-    // Expect an attribute "to be strictly equal" to the value.
-    // await expect(getStarted).toHaveAttribute('href', '/docs/intro');
+test('Counter increments when button pressed', async ({ page }) => {
+    await page.goto('/');
+    const incrementButton = page.getByText('Click Me!');
+    const counter = page.locator('id=counter');
+    
+    await incrementButton.click();
 
-    // Click the get started link.
-    // await getStarted.click();
+    await expect(counter).toHaveText('1');
+});
 
-    // Expects the URL to contain intro.
-    // await expect(page).toHaveURL(/.*intro/);
+test('navigate to about page', async({ page }) => {
+    await page.goto('/');
+    await page.locator('id=drawer-icon').click();
+
+    const aboutLink = page.getByText('about');
+
+    await aboutLink.click();
+
+
+    await expect(page).toHaveURL(/about/);
 });
