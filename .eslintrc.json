@@ -13,8 +13,8 @@
 	"parser": "vue-eslint-parser",
     "plugins": [
 		"vue",
-        "@typescript-eslint",
-        "only-warn"
+        "@typescript-eslint"
+        // "only-warn"
     ],
     "ignorePatterns": ["*.js", "*.config.ts"],
     "rules": {
