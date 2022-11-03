@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 export enum ConnectionMethods {
-    Serial = 'Serial',
-    Emulator = 'Emulator',
+    _Serial = 'Serial',
+    _Emulator = 'Emulator',
 }
 
 export interface ConnectionHandler {
