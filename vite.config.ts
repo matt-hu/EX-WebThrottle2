@@ -40,8 +40,12 @@ export default defineConfig({
               // ? ['html']
               : ['default'],
     coverage: {
+      provider: 'istanbul',
       reporter: ['text', 'json-summary', 'json']
+    },
+    deps: {
+      external: ["vuetify"],
+      inline: ["vuetify"]
     }
-
   }
 })

@@ -11,12 +11,11 @@ name: ESLint
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "next-release" ]
+
   pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "main" ]
-  schedule:
-    - cron: '44 12 * * 3'
+    branches: [ "main", "next-release" ]
+
   workflow_dispatch:
 
 jobs:
@@ -42,6 +41,7 @@ jobs:
           --ext .js,.jsx,.ts,.tsx
           --format @microsoft/eslint-formatter-sarif 
           --output-file eslint-results.sarif
+          --max-warnings=0
         continue-on-error: true
 
       - name: Upload analysis results to GitHub

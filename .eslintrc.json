@@ -4,7 +4,8 @@
         "plugin:vue/vue3-recommended",
 		"eslint:recommended",
         "@vue/eslint-config-typescript/recommended",
-		"plugin:@typescript-eslint/recommended"
+		"plugin:@typescript-eslint/recommended",
+        "google"
 	],
     "parserOptions": {
         "ecmaVersion": "latest"
@@ -12,7 +13,8 @@
 	"parser": "vue-eslint-parser",
     "plugins": [
 		"vue",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "only-warn"
     ],
     "ignorePatterns": ["*.js", "*.config.ts"],
     "rules": {
@@ -20,7 +22,7 @@
         "vue/html-indent": ["warn", 4],
         "vue/html-closing-bracket-spacing": "off",
         "no-trailing-spaces": ["warn", {"skipBlankLines": true}],
-        "indent": "warn",
+        "indent": ["warn", 2],
         "quotes": ["warn", "single"]
     }
 }
