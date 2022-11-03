@@ -23,6 +23,7 @@
         "vue/html-closing-bracket-spacing": "off",
         "no-trailing-spaces": ["warn", {"skipBlankLines": true}],
         "indent": ["warn", 2],
-        "quotes": ["warn", "single"]
+        "quotes": ["warn", "single"],
+        "no-unused-vars":"off"
     }
 }
