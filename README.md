@@ -1,44 +1,26 @@
-# default
+# EX-WebThrottle2
+**EX-WebThrottle2 is currently in very early development and is not in any way usable.**
+If you are able to help us please see the contributing section below.
 
-## Project setup
+If you want to use WebThrottle, you can use the current version [here](https://dcc-ex.com/WebThrottle-EX).
 
-```
-# yarn
-yarn
+## About EX-WebThrottle2
+Welcome to EX-WebThrottle2, the next generation web based control system for a EX-CommandStation controlled layout.
 
-# npm
-npm install
+### Features
+Here's a highlight of some of the features we have:
 
-# pnpm
-pnpm install
-```
+- Not much to see right now...See below for how to contribute! 
+### Screenshots 
+[Screenshots coming soon]
+## Getting started
+We recommend using our hosted version of WebThrottle. However, this isn't available yet.
+At the moment we recommend using the old version of WebThrottle which you can find [here](https://dcc-ex.com/WebThrottle-EX).
 
-### Compiles and hot-reloads for development
+Once we have a sufficient number of features, we'll start publishing weekly testing builds for people to try out.
 
-```
-# yarn
-yarn dev
 
-# npm
-npm run dev
+## Contributing
 
-# pnpm
-pnpm dev
-```
-
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+We really need people to help with EX-WebThrottle, no matter your experience! 
+If you are interested, see our contributing page [here](https://dcc-ex.com/about/contributing/webthrottle.html) and also consider joining our Discord server.
